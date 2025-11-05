@@ -2,7 +2,7 @@
 
 <div align="center">
 
-# CF-Workers-and-Snip-VLESS
+# CF-Workers-and-Snip-VLESS/TROJAN
 
 **中文** | [English](README_EN.md)
 
@@ -78,6 +78,10 @@ YouTube视频部署教程：https://youtu.be/GEcKz2NoKlM
 ```bash
 _acme-challenge
 ```
+## TROJAN协议
+
+snippets 请使用 snip_trojan.js 文件部署
+
 
 ## 许可证
 
