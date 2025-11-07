@@ -88,8 +88,6 @@ snippets 请使用 snip_trojan.js 文件部署
 
 请使用 snippets_ws.js 文件部署,在ws选项里，增加请求头，头字段：X-ProxyIP,值：socks://user:password@host:port
 
-snippets 请使用 snip_trojan.js 文件部署
-
 ## 许可证
 
 GPL 2.0
