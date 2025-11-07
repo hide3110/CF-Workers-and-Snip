@@ -8,7 +8,9 @@
 
 Telegram交流反馈群组: https://t.me/eooceu
 
-基于 Cloudflare Workers & Snippets 的高性能 VLESS 代理服务
+基于 Cloudflare Workers & Snippets 的高性能代理服务
+
+Snippets默认使用：snippets.js文件布署
 
 YouTube视频部署教程：https://youtu.be/GEcKz2NoKlM
 
@@ -82,6 +84,11 @@ _acme-challenge
 
 snippets 请使用 snip_trojan.js 文件部署
 
+## 兼容小火箭等客户端设置落地
+
+请使用 snippets_ws.js 文件部署,在ws选项里，增加请求头，头字段：X-ProxyIP,值：socks://user:password@host:port
+
+snippets 请使用 snip_trojan.js 文件部署
 
 ## 许可证
 
