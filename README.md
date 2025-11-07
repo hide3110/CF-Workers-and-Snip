@@ -86,7 +86,7 @@ snippets 请使用 snip_trojan.js 文件部署
 
 ## 兼容小火箭等客户端设置落地
 
-请使用 snippets_ws.js 文件部署,在ws选项里，增加请求头，头字段：X-ProxyIP,值：socks://user:password@host:port
+请使用 snippets_ws.js 文件部署,在ws选项里，增加请求头，头字段：X-ProxyIP， 值：socks://user:password@host:port
 
 ## 许可证
 
