@@ -98,20 +98,6 @@ function parsePryAddress(serverStr) {
     return { type: 'direct', host: serverStr, port: 443 };
 }
 
-function isSpeedTestSite(hostname) {
-    const speedTestDomains = ['speedtest.net','fast.com','speedtest.cn','speed.cloudflare.com', 'ovo.speedtestcustom.com'];
-    if (speedTestDomains.includes(hostname)) {
-        return true;
-    }
-
-    for (const domain of speedTestDomains) {
-        if (hostname.endsWith('.' + domain) || hostname === domain) {
-            return true;
-        }
-    }
-    return false;
-}
-
 export default {
     async fetch(request,env) {
         try {
@@ -253,10 +239,6 @@ async function handleSSRequest(request, customProxyIP) {
             
             const { hasError, message, addressType, port, hostname, rawIndex } = parseSSPacketHeader(chunk);
             if (hasError) throw new Error(message);
-
-            if (isSpeedTestSite(hostname)) {
-                throw new Error('Speedtest site is blocked');
-            }
 
             if (addressType === 2) { 
                 if (port === 53) isDnsQuery = true;
