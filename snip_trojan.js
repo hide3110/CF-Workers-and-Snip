@@ -3,7 +3,7 @@
 
 import { connect } from 'cloudflare:sockets';
 
-let proxyIP = '13.230.34.30';  // default proxyIP (可在运行时通过 /proxyip=xx 修改)
+let proxyIP = '111.119.215.93';  // default proxyIP (可在运行时通过 /proxyip=xx 修改)
 let yourUUID = '93bf61d9-3796-44c2-9b3a-49210ece2585';  // 用作 Trojan 密码（客户端会自动对其做 SHA224）
 
 // CDN 列表，用于生成订阅节点
